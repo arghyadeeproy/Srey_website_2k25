@@ -153,10 +153,10 @@ const CRTScreen = () => {
   // Function to determine which event folder content type to use
   const getEventFolderType = (eventId: string) => {
     // Technical events use content type 1 (with Gallery folder)
-    const technicalEvents = ['hackathon', 'film-making', 'pixcellence', 'mini-games', 
-      'sketchify', 'playtopia', 'mystic-map', 'quiz', 'robotics', 'coding'];
+    const technicalEvents = ['etc'];
     // Sports events use content type 2 (without Gallery folder)
-    const sportsEvents = ['table-tennis', 'chess', 'carrom', 'badminton'];
+    const sportsEvents = ['table-tennis', 'chess', 'carrom', 'badminton','hackathon', 'film-making', 'pixcellence', 'mini-games', 
+      'sketchify', 'playtopia', 'mystic-map', 'quiz', 'robotics', 'coding','ipl-mock-auction','bgmi','valorant','pes'];
     
     if (technicalEvents.some(event => eventId.startsWith(event))) {
       return 1;
