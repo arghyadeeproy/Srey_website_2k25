@@ -156,7 +156,7 @@ const CRTScreen = () => {
     const technicalEvents = ['etc'];
     // Sports events use content type 2 (without Gallery folder)
     const sportsEvents = ['table-tennis', 'chess', 'carrom', 'badminton','hackathon', 'film-making', 'pixcellence', 'mini-games', 
-      'sketchify', 'playtopia', 'mystic-map', 'quiz', 'robotics', 'coding','ipl-mock-auction','bgmi','valorant','pes'];
+      'sketchify', 'playtopia', 'mystic-map', 'quiz', 'robotics', 'codigo','ipl-mock-auction','bgmi','valorant','pes'];
     
     if (technicalEvents.some(event => eventId.startsWith(event))) {
       return 1;

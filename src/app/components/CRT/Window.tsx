@@ -18,11 +18,11 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
   const dropupRef = useRef<HTMLDivElement>(null);
   
   const contacts = [
-    { name: "Manash", role: "Core Committee", phone: "+91 7439270692" },
-    { name: "Deepan", role: "Core Committee", phone: "+91 9836579142" },
-    { name: "Adil", role: "Core Committee", phone: "+91 6291227656" },
-    { name: "Tushar", role: "Core Committee", phone: "+91 8709288805" },
-    { name: "Sourik", role: "Core Committee", phone: "+91 6298767026" }
+    { name: "Manash Das", phone: "+91 7439270692" },
+    { name: "Deepan Chowdhury", phone: "+91 9836579142" },
+    { name: "Adil", role: "", phone: "+91 6291227656" },
+    { name: "Tushar Anand", phone: "+91 8709288805" },
+    { name: "Sourik Poddar", phone: "+91 6298767026" }
   ];
 
   const commands = [
@@ -125,11 +125,11 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
     return (
       <div>
         Email: <a 
-          href="mailto:info@stcet.ac.in" 
-          onClick={(e) => handleMailClick("info@stcet.ac.in", e)}
+          href="mailto:srey@stcet.ac.in" 
+          onClick={(e) => handleMailClick("srey@stcet.ac.in", e)}
           className="text-blue-400 hover:underline cursor-pointer"
         >
-          info@stcet.ac.in
+          srey@stcet.ac.in
         </a>
       </div>
     );
@@ -142,7 +142,7 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
         <div>--- SREY 2K25 Contact Information ---</div>
         {contacts.map((contact, index) => (
           <div key={index}>
-            {contact.name} ({contact.role}): <a 
+            {contact.name}: <a 
               href={`tel:${contact.phone}`}
               onClick={(e) => handlePhoneClick(contact.phone, e)}
               className="text-blue-400 hover:underline cursor-pointer"

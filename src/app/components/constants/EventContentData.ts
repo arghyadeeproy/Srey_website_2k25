@@ -19,7 +19,7 @@ export interface EventContent {
       description: 'Competitive table tennis tournament',
       rules: 'https://forms.google.com/tabletennis',
       aboutUs: 'A premier competitive table tennis tournament featuring Boys Singles, Boys Doubles, Mixed Singles, and Mixed Doubles, showcasing skill, speed, and strategy.',
-      registrationLink: 'https://forms.google.com/tabletennis',
+      registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSehuiTgzgT5taEaMm0szSRGoKf2RNKQDcbevlOLYU0vRhR-ow/viewform?usp=sharing',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/tt1.jpg',
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/tt2.jpg',
@@ -32,7 +32,7 @@ export interface EventContent {
       description: 'Strategic chess competition',
       rules: '#',
       aboutUs: 'A prestigious chess tournament where strategic minds compete in intense battles, showcasing skill, tactics, and intellect across thrilling matches. Standard FIDE rules apply.',
-      registrationLink: 'https://forms.google.com/chess',
+      registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdO3EGbncPLHHO9lAmpzFiXzkBbx6DOeldoY-5x61AUm4OyZQ/viewform?usp=sharing',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/chess1.jpg',
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/chess2.jpg',
@@ -44,7 +44,7 @@ export interface EventContent {
       description: 'Carrom board championship',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Standard carrom federation rules apply. Players must report 15 minutes before scheduled match time.',
       aboutUs: 'A competitive carrom tournament where precision, strategy, and skill collide, bringing together top players for intense singles and doubles matches.',
-      registrationLink: 'https://forms.google.com/carrom',
+      registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfls8Z0QLwTKRdWceoIxat96v_2E26z5TzrP45YeKhqKU7fTw/viewform?usp=sharing',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/carrom1.jpg',
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/carrom2.jpg',
@@ -55,7 +55,7 @@ export interface EventContent {
       description: 'Singles and doubles badminton matches',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. BWF rules apply. Players must bring their own rackets. Shuttlecocks will be provided by the organizers.',
       aboutUs: "A thrilling badminton tournament featuring Boys' Singles, Boys' Doubles, Mixed Singles, and Mixed Doubles, showcasing speed, agility, and competitive spirit.",
-      registrationLink: 'https://forms.google.com/badminton',
+      registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeVh3BkXPwWIsvWVYo9HuQLwreVZ8XNhGUbB6Pp6a4HaPd62g/viewform?usp=sharing',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/badminton1.jpg',
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/badminton2.jpg',
@@ -67,7 +67,7 @@ export interface EventContent {
       description: 'Photography competition',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Photos must be original work. Editing is allowed but must be disclosed. Theme will be announced on the day of the event.',
       aboutUs: 'Showcase your creativity and storytelling through the lens! Join our college photography competition and capture moments that inspire.',
-      registrationLink: 'https://forms.google.com/pixcellence',
+      registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSduWgdG4_WszMMEZsA3J1sJrFttZCYBL2W6KeQjvrCo0fNFrA/viewform?usp=sharing',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/photo1.jpg',
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/photo2.jpg',
@@ -101,7 +101,7 @@ export interface EventContent {
     },
     'hackathon': {
       title: 'Hackathon',
-      description: '24-hour coding competition',
+      description: '36-hour coding competition',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams of 2-4 members. Problem statements will be revealed at the start of the event. Teams must bring their own laptops.',
       aboutUs: 'Code Flow: A thrilling 36-hour hackathon where innovators and developers collaborate, code, and create groundbreaking solutions under intense time pressure.',
       registrationLink: 'https://forms.google.com/hackathon',
@@ -114,7 +114,7 @@ export interface EventContent {
     },
     'mini-games': {
       title: 'Mini Games',
-      description: '24-hour coding competition',
+      description: 'Play, Compete and have a blast!',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams of 2-4 members. Problem statements will be revealed at the start of the event. Teams must bring their own laptops.',
       aboutUs: 'Play, compete, and have a blast! Join our Mini Games Carnival, featuring exciting challenges like Darts, Air Hockey, Cup Stack, Mini Basketball, Flip Tic Tac Toe, Electric Touch, and Jenga. Test your skills, have fun, and claim victory!',
       registrationLink: 'https://forms.google.com/hackathon',
@@ -130,7 +130,7 @@ export interface EventContent {
       description: 'Sketching and drawing contest',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Participants must bring their own stationery. \nTheme will be announced on the spot. Duration is 2 hours.',
       aboutUs: 'Sketchify event at St. Thomas College has been a creative outlet for students  showcasing exceptional artistic talent and fostering a passion for sketching.',
-      registrationLink: 'https://forms.google.com/sketchify',
+      registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSf_5X41AR4TC12p3vJ8IhuXa1c3uu9TkDLxFrf2B3eYgXW7Dg/viewform?usp=sharing',
       galleryImages: [
         '/scene2-d14f31-compressed-da7d54.jpg',
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/sketch2.jpg',
@@ -165,7 +165,7 @@ export interface EventContent {
       description: 'General knowledge quiz competition',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams of 2 members. Multiple rounds including written, audio-visual, and rapid fire rounds.',
       aboutUs: 'Think fast, answer smart, and claim the crown! Join our college quiz competition, where knowledge meets competition and only the sharpest minds prevail.',
-      registrationLink: 'https://forms.google.com/quiz',
+      registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfk1oFYQsLo7JJus91Pk-rB8-O2hSrDbPY9QZJahuwT6puRmA/viewform?usp=sharing',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/quiz1.jpg',
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/quiz2.jpg',
@@ -221,8 +221,8 @@ export interface EventContent {
       'https://de34i7k6qwgwc.cloudfront.net/uploads/img/pes2.jpg',
     ]
   },
-    'coding': {
-      title: 'Coding',
+    'codigo': {
+      title: 'Codigo',
       description: 'Competitive programming contest',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Individual participation. Problems will range from easy to hard. Time limit is 3 hours.',
       aboutUs: 'Code, compile, and conquer! Join our college coding competition, where logic meets innovation and only the best programmers rise to the top.',

@@ -19,7 +19,7 @@ export const Day2Content = ({ onFolderClick }: { onFolderClick?: (folderId: stri
     "Mystic Map",
     "Quiz",
     "Robotics",
-    "Coding"
+    "Codigo"
   ];
 
   const handleFolderClick = (folderName: string) => {
