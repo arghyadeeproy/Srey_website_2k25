@@ -329,7 +329,12 @@ const CRTScreen = () => {
             const position = getWindowPosition(windowId);
             
             return (
-              <Draggable key={windowId} handle=".handle" defaultPosition={position} cancel=".close-button">
+              <Draggable 
+                key={windowId} 
+                handle=".handle" 
+                defaultPosition={position} 
+                cancel=".close-button, .no-drag" // Add no-drag class to the cancel list
+              >
                 <div className="absolute z-20">
                   {renderWindow(windowId)}
                 </div>

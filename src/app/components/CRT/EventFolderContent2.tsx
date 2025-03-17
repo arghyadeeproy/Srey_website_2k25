@@ -28,10 +28,10 @@ const EventFolderContent2: React.FC<EventFolderContent2Props> = ({
             ✖
           </button>
         </div>
-        <div className="flex items-center bg-gray-400 text-white text-xs handle cursor-move border-t border-b border-white">
-          <span className="border-r border-white px-1" onClick={onClose}>🔙</span>
-          <span className="border-r border-white px-1" onClick={onClose}>🏠︎</span>
-          <span className="px-2">{`C:\\Events\\Day1\\${title}`}</span>
+        <div className="flex items-center bg-gray-400 text-white text-xs border-t border-b border-white">
+          <span className="border-r border-white px-1 cursor-pointer no-drag" onClick={onClose}>🔙</span>
+          <span className="border-r border-white px-1 cursor-pointer no-drag" onClick={onClose}>🏠︎</span>
+          <span className="px-2 handle cursor-move">{`C:\\Events\\Day1\\${title}`}</span>
         </div>
         <div className="p-4 text-xs text-gray-800 overflow-y-auto h-[160px]">
           <h2 className="text-blue-900 font-bold text-sm">{title} Event</h2>

@@ -9,16 +9,13 @@ interface WindowProps {
 }
 
 const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
-  // Change the type to accept both strings and React elements
-  const [command, setCommand] = useState<string>("");
-  const [showDropdown, setShowDropdown] = useState<boolean>(false);
+  const [showDropup, setShowDropup] = useState<boolean>(false);
   const [history, setHistory] = useState<ReactNode[]>([
     "Welcome to SREY 2K25 Terminal",
-    "Type /help to see available commands",
+    "Click on the terminal to see available commands",
   ]);
   const terminalRef = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const dropupRef = useRef<HTMLDivElement>(null);
   
   const contacts = [
     { name: "Manash", role: "Core Committee", phone: "+91 7439270692" },
@@ -33,6 +30,8 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
     { name: "/insta", description: "Get our Instagram handle" },
     { name: "/fb", description: "Get our Facebook page" },
     { name: "/contact", description: "View contact information" },
+    { name: "/website", description: "Visit college website" },
+    { name: "/mail", description: "Contact via email" },
     { name: "/clear", description: "Clear the terminal" },
     { name: "/close", description: "Close this window" },
   ];
@@ -43,28 +42,13 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
     }
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter") {
-      processCommand();
-    } else if (e.key === "Tab" || e.key === "ArrowDown") {
-      e.preventDefault();
-      setShowDropdown(true);
-    } else if (e.key === "Escape") {
-      setShowDropdown(false);
-    }
-  };
-
-  const toggleDropdown = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    setShowDropdown(!showDropdown);
+  const toggleDropup = () => {
+    setShowDropup(!showDropup);
   };
 
   const selectCommand = (cmd: string) => {
-    setCommand(cmd);
-    setShowDropdown(false);
-    if (inputRef.current) {
-      inputRef.current.focus();
-    }
+    processCommand(cmd);
+    setShowDropup(false);
   };
 
   // Function to handle link clicks
@@ -77,6 +61,12 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
   const handlePhoneClick = (phone: string, e: React.MouseEvent) => {
     e.stopPropagation();
     window.location.href = `tel:${phone}`;
+  };
+
+  // Function to handle email
+  const handleMailClick = (email: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    window.location.href = `mailto:${email}`;
   };
 
   // Function to render Instagram with clickable link
@@ -113,6 +103,38 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
     );
   };
 
+  // Function to render website link
+  const renderWebsite = () => {
+    return (
+      <div>
+        Website: <a 
+          href="https://www.stcet.ac.in" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          onClick={(e) => handleLinkClick("https://www.stcet.ac.in", e)}
+          className="text-blue-400 hover:underline cursor-pointer"
+        >
+          www.stcet.ac.in
+        </a>
+      </div>
+    );
+  };
+
+  // Function to render email
+  const renderEmail = () => {
+    return (
+      <div>
+        Email: <a 
+          href="mailto:info@stcet.ac.in" 
+          onClick={(e) => handleMailClick("info@stcet.ac.in", e)}
+          className="text-blue-400 hover:underline cursor-pointer"
+        >
+          info@stcet.ac.in
+        </a>
+      </div>
+    );
+  };
+
   // Function to render contact with clickable phone numbers
   const renderContact = () => {
     return (
@@ -133,22 +155,15 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
     );
   };
 
-  const processCommand = () => {
-    if (!command) return;
-    
+  const processCommand = (command: string) => {
     const newHistory = [...history, `> ${command}`];
     
     switch(command.toLowerCase()) {
       case '/help':
-        newHistory.push(
-          "Available commands:",
-          "/insta - Get our Instagram handle",
-          "/fb - Get our Facebook page",
-          "/contact - View contact information of volunteers",
-          "/clear - Clear the terminal",
-          "/close - Close this window",
-          "/help - Show this help message"
-        );
+        newHistory.push("Available commands:");
+        commands.forEach(cmd => {
+          newHistory.push(`${cmd.name} - ${cmd.description}`);
+        });
         break;
       
       case '/insta':
@@ -162,18 +177,22 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
       case '/contact':
         newHistory.push(renderContact());
         break;
+
+      case '/website':
+        newHistory.push(renderWebsite());
+        break;
+
+      case '/mail':
+        newHistory.push(renderEmail());
+        break;
       
       case '/clear':
         setHistory(["Terminal cleared."]);
-        setCommand("");
         return;
         
       case '/close':
-        newHistory.push(
-          "Closing window..."
-        );
+        newHistory.push("Closing window...");
         setHistory(newHistory);
-        setCommand("");
         // Delay the window close for a moment to show the closing message
         setTimeout(() => {
           onClose();
@@ -183,31 +202,30 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
       default:
         newHistory.push(
           `Command not recognized: ${command}`,
-          "Type /help to see available commands."
+          "Click on the terminal to see available commands."
         );
     }
     
     setHistory(newHistory);
-    setCommand("");
-    setShowDropdown(false);
   };
 
   useEffect(() => {
+    // Ensure scrolling to the bottom when history changes
     if (terminalRef.current) {
       terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
     }
   }, [history]);
 
-  // Close dropdown when clicking outside
+  // Close dropup when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
-        dropdownRef.current && 
-        !dropdownRef.current.contains(event.target as Node) &&
-        inputRef.current && 
-        !inputRef.current.contains(event.target as Node)
+        dropupRef.current && 
+        !dropupRef.current.contains(event.target as Node) &&
+        terminalRef.current && 
+        !terminalRef.current.contains(event.target as Node)
       ) {
-        setShowDropdown(false);
+        setShowDropup(false);
       }
     };
     
@@ -221,6 +239,22 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
     e.preventDefault();
     e.stopPropagation();
     onClose(e);
+  };
+
+  // Separate handler for navigation buttons to prevent dragging when clicking these buttons
+  const handleNavigation = (action: string, e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (action === 'back' || action === 'home') {
+      onClose(e);
+    }
+  };
+
+  // College website link handler
+  const handleCollegeWebsite = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    window.open('https://www.stcet.ac.in', '_blank');
   };
 
   // Function to capitalize the first letter of the title
@@ -243,9 +277,9 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
 
       {title === "events" ? (
         <>
-          <div className="flex items-center bg-gray-400 text-white text-xs handle cursor-move border-t border-b border-white">
-            <span className="border-r border-white px-1" onClick={onClose}>🔙</span>
-            <span className="border-r border-white px-1" onClick={onClose}>🏠︎</span>
+          <div className="flex items-center bg-gray-400 text-white text-xs border-t border-b border-white">
+            <span className="border-r border-white px-1 cursor-pointer no-drag" onClick={(e) => handleNavigation('back', e)}>🔙</span>
+            <span className="border-r border-white px-1 cursor-pointer no-drag" onClick={(e) => handleNavigation('home', e)}>🏠︎</span>
             <span className="px-2">C:\Events\</span>
           </div>
           <div className="bg-gray-300 p-2 text-xs flex-1 flex">
@@ -275,7 +309,10 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
         </>
       ) : title === "aboutus" ? (
         <div className="p-4 text-xs text-gray-800 overflow-y-auto flex-1">
-          <h2 className="text-blue-900 font-bold text-sm">🚀 St. Thomas College proudly presents</h2>
+          <h2 className="text-blue-900 font-bold text-sm">🚀 <span 
+            className="cursor-pointer hover:underline"
+            onClick={handleCollegeWebsite}
+          >St. Thomas' College of Engineering and Technology</span> proudly presents</h2>
           <h3 className="text-red-600 font-bold text-sm">SREY 2K25 🎉</h3>
           <p className="mt-2">
             Kolkata's premier on-campus tech festival. 💡🔥
@@ -298,59 +335,51 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
           <div className="flex items-center bg-gray-900 text-green-500 text-xs border-t border-b border-white px-2 py-1">
             <span>SREY2K25 Terminal v1.0</span>
           </div>
-          <div className="flex flex-col flex-1 bg-black">
+          <div className="flex flex-col flex-1 bg-black relative">
+            {/* Terminal output area - now properly scrollable */}
             <div 
               ref={terminalRef}
-              className="text-green-500 font-mono text-xs p-2 flex-1 overflow-y-auto"
+              className="text-green-500 font-mono text-xs p-2 flex-1 overflow-y-auto absolute top-0 left-0 right-0 bottom-8 touch-auto"
+              onClick={toggleDropup}
               style={{
                 scrollbarWidth: 'thin',
                 scrollbarColor: '#4a5568 #000000',
-                maxHeight: '130px'
+                WebkitOverflowScrolling: 'touch',
               }}
             >
               {history.map((line, index) => (
                 <div key={index}>{line}</div>
               ))}
             </div>
-            <div className="flex bg-black text-green-500 font-mono text-xs px-2 py-1 border-t border-gray-800 relative">
-              <span>{">"}</span>
-              <div className="relative flex-1">
-                <input
-                  ref={inputRef}
-                  type="text"
-                  value={command}
-                  onChange={(e) => setCommand(e.target.value)}
-                  onKeyDown={handleKeyDown}
-                  onClick={toggleDropdown}
-                  className="bg-transparent text-green-500 font-mono text-xs border-none outline-none w-full ml-1 cursor-pointer"
-                  autoFocus
-                  placeholder="Click for commands"
-                />
-                {showDropdown && (
-                  <div 
-                    ref={dropdownRef}
-                    className="absolute bottom-6 left-0 w-full bg-gray-800 border border-gray-700 shadow-lg max-h-24 overflow-y-auto z-50"
-                  >
-                    {commands.map((cmd, index) => (
-                      <div 
-                        key={index}
-                        onClick={() => selectCommand(cmd.name)}
-                        className="px-2 py-1 text-green-500 hover:bg-gray-700 cursor-pointer flex justify-between"
-                      >
-                        <span>{cmd.name}</span>
-                        <span className="text-gray-400 text-xs">{cmd.description}</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-              <button 
-                onClick={processCommand}
-                className="ml-1 bg-gray-800 text-green-500 px-1 hover:bg-gray-700"
-              >
-                ⏎
-              </button>
+            
+            {/* Fixed command bar at the bottom */}
+            <div className="flex bg-black text-green-500 font-mono text-xs px-2 py-1 border-t border-gray-800 absolute bottom-0 left-0 right-0 h-8">
+              <span className="cursor-pointer" onClick={toggleDropup}>{">"} Click for commands</span>
             </div>
+            
+            {/* Dropup menu with reduced text size */}
+            {showDropup && (
+              <div 
+                ref={dropupRef}
+                className="absolute bottom-8 left-0 right-0 bg-gray-800 border-t border-gray-700 shadow-lg max-h-32 overflow-y-auto touch-auto z-50"
+                style={{
+                  WebkitOverflowScrolling: 'touch',
+                }}
+              >
+                {commands.map((cmd, index) => (
+                  <div 
+                    key={index}
+                    onClick={() => selectCommand(cmd.name)}
+                    className="px-2 py-0.5 text-green-500 hover:bg-gray-700 cursor-pointer flex justify-between text-xs"
+                  >
+                    <span>{cmd.name}</span>
+                    <span className="text-gray-400 text-xs">
+                      {cmd.description}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       ) : (
