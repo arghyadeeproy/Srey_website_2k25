@@ -17,7 +17,6 @@ export const Day1Content = ({ onFolderClick }: { onFolderClick?: (folderId: stri
     "Badminton",
     "Pixcellence",
     "Film Making",
-    "IPL Mock Auction",
     "Hackathon",
     "Sketchify"
   ];

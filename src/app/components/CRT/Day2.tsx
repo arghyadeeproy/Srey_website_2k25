@@ -15,6 +15,7 @@ export const Day2Content = ({ onFolderClick }: { onFolderClick?: (folderId: stri
     "BGMI",
     "Valorant",
     "PES",
+    "IPL Mock Auction",
     "Mystic Map",
     "Quiz",
     "Robotics",

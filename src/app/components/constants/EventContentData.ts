@@ -18,7 +18,7 @@ export interface EventContent {
       title: 'Table Tennis',
       description: 'Competitive table tennis tournament',
       rules: 'https://forms.google.com/tabletennis',
-      aboutUs: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. The Table Tennis club at St. Thomas College has been active since 2010 and has produced several state-level players.',
+      aboutUs: 'A premier competitive table tennis tournament featuring Boys Singles, Boys Doubles, Mixed Singles, and Mixed Doubles, showcasing skill, speed, and strategy.',
       registrationLink: 'https://forms.google.com/tabletennis',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/tt1.jpg',
@@ -30,8 +30,8 @@ export interface EventContent {
     'chess': {
       title: 'Chess',
       description: 'Strategic chess competition',
-      rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Standard FIDE rules apply. Time control is 15+10. Arbiter\'s decision is final.',
-      aboutUs: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Chess has been a key intellectual sport at our college with several rated players among our alumni.',
+      rules: '#',
+      aboutUs: 'A prestigious chess tournament where strategic minds compete in intense battles, showcasing skill, tactics, and intellect across thrilling matches. Standard FIDE rules apply.',
       registrationLink: 'https://forms.google.com/chess',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/chess1.jpg',
@@ -43,7 +43,7 @@ export interface EventContent {
       title: 'Carrom',
       description: 'Carrom board championship',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Standard carrom federation rules apply. Players must report 15 minutes before scheduled match time.',
-      aboutUs: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Carrom has been a traditional favorite at St. Thomas College with annual tournaments since 2005.',
+      aboutUs: 'A competitive carrom tournament where precision, strategy, and skill collide, bringing together top players for intense singles and doubles matches.',
       registrationLink: 'https://forms.google.com/carrom',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/carrom1.jpg',
@@ -54,7 +54,7 @@ export interface EventContent {
       title: 'Badminton',
       description: 'Singles and doubles badminton matches',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. BWF rules apply. Players must bring their own rackets. Shuttlecocks will be provided by the organizers.',
-      aboutUs: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. The badminton court at St. Thomas College was renovated in 2023 and now features professional quality flooring.',
+      aboutUs: "A thrilling badminton tournament featuring Boys' Singles, Boys' Doubles, Mixed Singles, and Mixed Doubles, showcasing speed, agility, and competitive spirit.",
       registrationLink: 'https://forms.google.com/badminton',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/badminton1.jpg',
@@ -80,7 +80,7 @@ export interface EventContent {
       title: 'Film Making',
       description: 'Short film competition',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Films must be 5-10 minutes long. Theme will be provided. Submission deadline is 48 hours after theme announcement.',
-      aboutUs: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Our film making competition has been a platform for budding directors to showcase their talent and creativity.',
+      aboutUs: 'A dynamic filmmaking competition where creativity meets storytelling, challenging filmmakers to craft compelling stories through cinematography, direction, and editing.',
       registrationLink: 'https://forms.google.com/filmmaking',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/film1.jpg',
@@ -103,7 +103,7 @@ export interface EventContent {
       title: 'Hackathon',
       description: '24-hour coding competition',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams of 2-4 members. Problem statements will be revealed at the start of the event. Teams must bring their own laptops.',
-      aboutUs: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Our hackathon brings together the brightest minds to solve real-world problems through innovative technology solutions.',
+      aboutUs: 'Code Flow: A thrilling 36-hour hackathon where innovators and developers collaborate, code, and create groundbreaking solutions under intense time pressure.',
       registrationLink: 'https://forms.google.com/hackathon',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/hack1.jpg',
