@@ -20,7 +20,7 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
   const contacts = [
     { name: "Manash Das", phone: "+91 7439270692" },
     { name: "Deepan Chowdhury", phone: "+91 9836579142" },
-    { name: "Adil", role: "", phone: "+91 6291227656" },
+    { name: "Adil Sehab", role: "", phone: "+91 6291227656" },
     { name: "Tushar Anand", phone: "+91 8709288805" },
     { name: "Sourik Poddar", phone: "+91 6298767026" }
   ];
