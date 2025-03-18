@@ -4,12 +4,14 @@ import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import CRTScreen from './components/CRTScren';
 import Loader from './components/Loader';
+import PosterPopup from './components/PosterPopup';
 
 export default function Home() {
   const [showCRT, setShowCRT] = useState(false);
   const [showButton, setShowButton] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [showPoster, setShowPoster] = useState(false);
   const zoomDuration = 1000; // Animation duration in ms
   
   // Create refs for audio elements with proper typing
@@ -40,6 +42,8 @@ export default function Home() {
       // In a real app, you might want to check if all assets are loaded
       setTimeout(() => {
         setIsLoading(false);
+        // Show poster popup after loading is complete
+        setShowPoster(true);
       }, 2500); // Show loader for 2.5 seconds
     };
 
@@ -95,10 +99,18 @@ export default function Home() {
     return isMobile ? 'scale(1)' : 'scale(1.8)';
   };
 
+  // Close the poster popup
+  const handleClosePoster = () => {
+    setShowPoster(false);
+  };
+
   return (
     <>
       {/* Show loader while page is loading */}
       {isLoading && <Loader />}
+      
+      {/* Show poster popup after loading */}
+      {showPoster && <PosterPopup onClose={handleClosePoster} />}
       
       <div className="fixed inset-0 overflow-hidden">
         {/* Audio elements */}
@@ -159,7 +171,7 @@ export default function Home() {
           </div>
         )}
 
-        {/* Updated styles for responsive positioning */}
+        {/* Styles remain unchanged */}
         <style jsx global>{`
           /* CRT monitor wrapper - positions the screen in the monitor */
           .crt-monitor-wrapper {
