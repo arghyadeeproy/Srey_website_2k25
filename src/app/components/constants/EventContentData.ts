@@ -106,10 +106,11 @@ export interface EventContent {
       aboutUs: 'Code Flow: A thrilling 36-hour hackathon where innovators and developers collaborate, code, and create groundbreaking solutions under intense time pressure.',
       registrationLink: 'https://forms.google.com/hackathon',
       galleryImages: [
-        'https://de34i7k6qwgwc.cloudfront.net/uploads/img/hack1.jpg',
-        'https://de34i7k6qwgwc.cloudfront.net/uploads/img/hack2.jpg',
-        'https://de34i7k6qwgwc.cloudfront.net/uploads/img/hack3.jpg',
-        'https://de34i7k6qwgwc.cloudfront.net/uploads/img/hack4.jpg',
+        '/hack1.jpg',
+        '/tt2.jpg',
+        '/tt3.jpg',
+        'tt4.jpg',
+        '/tt5.jpg',
       ]
     },
     'mini-games': {
@@ -156,8 +157,7 @@ export interface EventContent {
       aboutUs: 'Decipher the clues, navigate the unknown, and uncover hidden secrets! Join Mystic Map, our ultimate treasure hunt, where only the sharpest minds and quickest explorers will claim victory.',
       registrationLink: 'https://forms.google.com/mysticmap',
       galleryImages: [
-        'https://de34i7k6qwgwc.cloudfront.net/uploads/img/map1.jpg',
-        'https://de34i7k6qwgwc.cloudfront.net/uploads/img/map2.jpg',
+        '/mm1.jpg'
       ]
     },
     'quiz': {
@@ -179,9 +179,9 @@ export interface EventContent {
       aboutUs: 'Gear up, innovate, and dominate the arena! Join RoboRush, our ultimate robotics showdown, where creativity meets competition and only the smartest bots survive.',
       registrationLink: 'https://forms.google.com/robotics',
       galleryImages: [
-        'https://de34i7k6qwgwc.cloudfront.net/uploads/img/robot1.jpg',
-        'https://de34i7k6qwgwc.cloudfront.net/uploads/img/robot2.jpg',
-        'https://de34i7k6qwgwc.cloudfront.net/uploads/img/robot3.jpg',
+        '/robo1.jpg',
+        '/robo2.jpg',
+        '/robo3.jpg',
       ]
     },
     'bgmi': {
@@ -191,9 +191,8 @@ export interface EventContent {
       aboutUs: 'Experience the thrill of battle royale competition! Our BGMI tournament brings together the best squads from across campus to compete for glory in intense tactical gameplay.',
       registrationLink: 'https://forms.google.com/bgmi',
       galleryImages: [
-        'https://de34i7k6qwgwc.cloudfront.net/uploads/img/bgmi1.jpg',
-        'https://de34i7k6qwgwc.cloudfront.net/uploads/img/bgmi2.jpg',
-        'https://de34i7k6qwgwc.cloudfront.net/uploads/img/bgmi3.jpg',
+        '/bgmi_1.jpg',
+        '/bgmi_2.jpg'
       ]
     },
     'valorant': {
@@ -217,8 +216,8 @@ export interface EventContent {
     aboutUs: 'Show your virtual football skills at our PES tournament! Experience the excitement of competitive gaming with realistic gameplay and tactical depth in this popular football simulation.',
     registrationLink: 'https://forms.google.com/pes',
     galleryImages: [
-      'https://de34i7k6qwgwc.cloudfront.net/uploads/img/pes1.jpg',
-      'https://de34i7k6qwgwc.cloudfront.net/uploads/img/pes2.jpg',
+      '/pes.jpg',
+      'pes2.jpg',
     ]
   },
     'codigo': {
