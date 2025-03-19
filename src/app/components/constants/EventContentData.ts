@@ -81,7 +81,7 @@ export interface EventContent {
       description: 'Short film competition',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Films must be 5-10 minutes long. Theme will be provided. Submission deadline is 48 hours after theme announcement.',
       aboutUs: 'A dynamic filmmaking competition where creativity meets storytelling, challenging filmmakers to craft compelling stories through cinematography, direction, and editing.',
-      registrationLink: 'https://forms.google.com/filmmaking',
+      registrationLink: 'https://docs.google.com/forms/d/1LYF90WOO-d3sLA5xEIWpLJyvCG-FSJKdKRANfO_dlW8/edit',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/film1.jpg',
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/film2.jpg',
@@ -93,7 +93,7 @@ export interface EventContent {
       description: 'Simulated IPL team auction',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams will have a virtual budget of 80 crores. Player list will be provided 2 days before the event.',
       aboutUs: 'Bid smart, strategize, and build your dream team! Join our IPL Mock Auction, where every choice counts and only the best team owners rise to the top.',
-      registrationLink: 'https://forms.google.com/iplauction',
+      registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdBRWoFIQqj1rEz5IncdP6uh2S7WcW9OrhUxDYibUhBEFhthg/viewform?usp=sharing',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/ipl1.jpg',
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/ipl2.jpg',
@@ -104,7 +104,7 @@ export interface EventContent {
       description: '36-hour coding competition',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams of 2-4 members. Problem statements will be revealed at the start of the event. Teams must bring their own laptops.',
       aboutUs: 'Code Flow: A thrilling 36-hour hackathon where innovators and developers collaborate, code, and create groundbreaking solutions under intense time pressure.',
-      registrationLink: 'https://forms.google.com/hackathon',
+      registrationLink: 'https://unstop.com/o/EwsWvph?lb=kxB1XWrC&utm_medium=Share&utm_source=shortUrl',
       galleryImages: [
         '/hack1.jpg',
         '/tt2.jpg',
@@ -152,10 +152,10 @@ export interface EventContent {
     },
     'mystic-map': {
       title: 'Mystic Map',
-      description: 'Treasure hunt with cryptic clues',
+      description: 'Treasure hunt with cryptic clues (For College Students Only)',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams of 3-5 members. Clues will be provided at different checkpoints. First team to reach the final destination wins.',
       aboutUs: 'Decipher the clues, navigate the unknown, and uncover hidden secrets! Join Mystic Map, our ultimate treasure hunt, where only the sharpest minds and quickest explorers will claim victory.',
-      registrationLink: 'https://forms.google.com/mysticmap',
+      registrationLink: 'https://forms.gle/F4Hzvzi51m9m4mS17',
       galleryImages: [
         '/mm1.jpg'
       ]
@@ -177,7 +177,7 @@ export interface EventContent {
       description: 'Robot building and programming challenge',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams will be provided with robotics kits. Tasks will be announced on the spot. Time limit is 4 hours.',
       aboutUs: 'Gear up, innovate, and dominate the arena! Join RoboRush, our ultimate robotics showdown, where creativity meets competition and only the smartest bots survive.',
-      registrationLink: 'https://forms.google.com/robotics',
+      registrationLink: 'https://forms.gle/k7Qo5AmQWfpjFj1V8',
       galleryImages: [
         '/robo1.jpg',
         '/robo2.jpg',
@@ -189,7 +189,7 @@ export interface EventContent {
       description: 'Battlegrounds Mobile India tournament',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams of 4 members. Multiple rounds including qualifiers and finals. Players must bring their own devices with BGMI installed.',
       aboutUs: 'Experience the thrill of battle royale competition! Our BGMI tournament brings together the best squads from across campus to compete for glory in intense tactical gameplay.',
-      registrationLink: 'https://forms.google.com/bgmi',
+      registrationLink: 'https://forms.gle/odYLDC3gGGhsvyaY7',
       galleryImages: [
         '/bgmi_1.jpg',
         '/bgmi_2.jpg'
@@ -200,7 +200,7 @@ export interface EventContent {
     description: 'Tactical 5v5 FPS competition',
     rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams of 5 members. Double elimination tournament. Standard Valorant competitive rules apply. Matches will be best of 3.',
     aboutUs: 'Aim, strategize, and dominate! Join our Valorant tournament where tactical precision meets lightning reflexes. Form your squad and prove your worth in this premier collegiate esports event.',
-    registrationLink: 'https://forms.google.com/valorant',
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScfcQhomw4nHuCG8NU_D4tY-RLRs-deWPQghNKEPBZuA4MLMw/viewform?usp=sharing',
     galleryImages: [
       'https://de34i7k6qwgwc.cloudfront.net/uploads/img/valorant1.jpg',
       'https://de34i7k6qwgwc.cloudfront.net/uploads/img/valorant2.jpg',
@@ -214,7 +214,7 @@ export interface EventContent {
     description: 'Pro Evolution Soccer tournament',
     rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. 1v1 knockout format. Players can select any club or national team. Standard half length is 5 minutes. No custom teams allowed.',
     aboutUs: 'Show your virtual football skills at our PES tournament! Experience the excitement of competitive gaming with realistic gameplay and tactical depth in this popular football simulation.',
-    registrationLink: 'https://forms.google.com/pes',
+    registrationLink: 'https://forms.gle/FdwYe5qUbKBHuFaCA',
     galleryImages: [
       '/pes.jpg',
       'pes2.jpg',
@@ -225,7 +225,7 @@ export interface EventContent {
       description: 'Competitive programming contest',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Individual participation. Problems will range from easy to hard. Time limit is 3 hours.',
       aboutUs: 'Code, compile, and conquer! Join our college coding competition, where logic meets innovation and only the best programmers rise to the top.',
-      registrationLink: 'https://forms.google.com/coding',
+      registrationLink: 'https://forms.gle/WRuz6QJb7UM4AUdy8',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/code1.jpg',
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/code2.jpg',
@@ -234,3 +234,5 @@ export interface EventContent {
   };
   
   export default eventContentData;
+
+  
