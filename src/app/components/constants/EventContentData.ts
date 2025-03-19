@@ -18,7 +18,7 @@ export interface EventContent {
       title: 'Table Tennis',
       description: 'Competitive table tennis tournament',
       rules: 'https://forms.google.com/tabletennis',
-      aboutUs: 'A premier competitive table tennis tournament featuring Boys Singles, Boys Doubles, Mixed Singles, and Mixed Doubles, showcasing skill, speed, and strategy.',
+      aboutUs: 'A premier competitive table tennis tournament featuring Boys Singles, Boys Doubles, Girl\'s Singles, and Mixed Doubles, showcasing skill, speed, and strategy.',
       registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSehuiTgzgT5taEaMm0szSRGoKf2RNKQDcbevlOLYU0vRhR-ow/viewform?usp=sharing',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/tt1.jpg',
@@ -54,7 +54,7 @@ export interface EventContent {
       title: 'Badminton',
       description: 'Singles and doubles badminton matches',
       rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. BWF rules apply. Players must bring their own rackets. Shuttlecocks will be provided by the organizers.',
-      aboutUs: "A thrilling badminton tournament featuring Boys' Singles, Boys' Doubles, Mixed Singles, and Mixed Doubles, showcasing speed, agility, and competitive spirit.",
+      aboutUs: "A thrilling badminton tournament featuring Boys Doubles, Mixed Singles, and Mixed Doubles, showcasing speed, agility, and competitive spirit.",
       registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeVh3BkXPwWIsvWVYo9HuQLwreVZ8XNhGUbB6Pp6a4HaPd62g/viewform?usp=sharing',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/badminton1.jpg',
