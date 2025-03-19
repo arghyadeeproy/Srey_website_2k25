@@ -181,7 +181,7 @@ const CRTScreen = () => {
     }
     
     // For regular events like "chess-rules", "table-tennis-gallery"
-    const specialSuffixes = ['rules', 'gallery', 'about'];
+    const specialSuffixes = ['rules', 'gallery', 'about', 'registration'];
     for (const suffix of specialSuffixes) {
       if (parts.includes(suffix)) {
         const suffixIndex = parts.indexOf(suffix);
@@ -216,6 +216,19 @@ const CRTScreen = () => {
           <RulesDocument 
             title={`${eventData.title} - Rules`}
             content={eventData.rules}
+            onClose={() => closeWindow(windowId)}
+          />
+        );
+      }
+    } else if (windowId === 'mini-games-registration') {
+      // Special case for mini-games registration that shows rules content instead
+      const eventData = eventContentData['mini-games'];
+      
+      if (eventData) {
+        return (
+          <RulesDocument 
+            title={`${eventData.title} - Information`}
+            content={eventData.registrationLink} // Using registration link content instead of rules
             onClose={() => closeWindow(windowId)}
           />
         );
@@ -262,10 +275,12 @@ const CRTScreen = () => {
         } else if (item === 'gallery') {
           toggleWindow(`${baseEventId}-gallery`);
         } else if (item === 'registration') {
-          // Special handling for Mini Games
+          // Special handling for mini-games
           if (baseEventId === 'mini-games') {
-            toggleWindow(`${baseEventId}-rules`);
+            // Toggle a special window instead of using external link
+            toggleWindow(`${baseEventId}-registration`);
           } else {
+            // For all other events, use the registration link directly
             handleExternalLink(eventData.registrationLink);
           }
         }

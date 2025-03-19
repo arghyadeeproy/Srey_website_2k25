@@ -17,7 +17,7 @@ export interface EventContent {
     'table-tennis': {
       title: 'Table Tennis',
       description: 'Competitive table tennis tournament',
-      rules: 'https://forms.google.com/tabletennis',
+      rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
       aboutUs: 'A premier competitive table tennis tournament featuring Boys Singles, Boys Doubles, Girl\'s Singles, and Mixed Doubles, showcasing skill, speed, and strategy.',
       registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSehuiTgzgT5taEaMm0szSRGoKf2RNKQDcbevlOLYU0vRhR-ow/viewform?usp=sharing',
       galleryImages: [
@@ -30,7 +30,7 @@ export interface EventContent {
     'chess': {
       title: 'Chess',
       description: 'Strategic chess competition',
-      rules: '#',
+      rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
       aboutUs: 'A prestigious chess tournament where strategic minds compete in intense battles, showcasing skill, tactics, and intellect across thrilling matches. Standard FIDE rules apply.',
       registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdO3EGbncPLHHO9lAmpzFiXzkBbx6DOeldoY-5x61AUm4OyZQ/viewform?usp=sharing',
       galleryImages: [
@@ -42,7 +42,7 @@ export interface EventContent {
     'carrom': {
       title: 'Carrom',
       description: 'Carrom board championship',
-      rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Standard carrom federation rules apply. Players must report 15 minutes before scheduled match time.',
+      rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
       aboutUs: 'A competitive carrom tournament where precision, strategy, and skill collide, bringing together top players for intense singles and doubles matches.',
       registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfls8Z0QLwTKRdWceoIxat96v_2E26z5TzrP45YeKhqKU7fTw/viewform?usp=sharing',
       galleryImages: [
@@ -53,7 +53,7 @@ export interface EventContent {
     'badminton': {
       title: 'Badminton',
       description: 'Singles and doubles badminton matches',
-      rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. BWF rules apply. Players must bring their own rackets. Shuttlecocks will be provided by the organizers.',
+      rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
       aboutUs: "A thrilling badminton tournament featuring Boys Doubles, Mixed Singles, and Mixed Doubles, showcasing speed, agility, and competitive spirit.",
       registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeVh3BkXPwWIsvWVYo9HuQLwreVZ8XNhGUbB6Pp6a4HaPd62g/viewform?usp=sharing',
       galleryImages: [
@@ -65,7 +65,7 @@ export interface EventContent {
     'pixcellence': {
       title: 'Pixcellence',
       description: 'Photography competition',
-      rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Photos must be original work. Editing is allowed but must be disclosed. Theme will be announced on the day of the event.',
+      rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
       aboutUs: 'Showcase your creativity and storytelling through the lens! Join our college photography competition and capture moments that inspire.',
       registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSduWgdG4_WszMMEZsA3J1sJrFttZCYBL2W6KeQjvrCo0fNFrA/viewform?usp=sharing',
       galleryImages: [
@@ -79,7 +79,7 @@ export interface EventContent {
     'film-making': {
       title: 'Film Making',
       description: 'Short film competition',
-      rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Films must be 5-10 minutes long. Theme will be provided. Submission deadline is 48 hours after theme announcement.',
+      rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
       aboutUs: 'A dynamic filmmaking competition where creativity meets storytelling, challenging filmmakers to craft compelling stories through cinematography, direction, and editing.',
       registrationLink: 'https://docs.google.com/forms/d/1LYF90WOO-d3sLA5xEIWpLJyvCG-FSJKdKRANfO_dlW8/edit',
       galleryImages: [
@@ -91,7 +91,7 @@ export interface EventContent {
     'ipl-mock-auction': {
       title: 'IPL Mock Auction',
       description: 'Simulated IPL team auction',
-      rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams will have a virtual budget of 80 crores. Player list will be provided 2 days before the event.',
+      rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
       aboutUs: 'Bid smart, strategize, and build your dream team! Join our IPL Mock Auction, where every choice counts and only the best team owners rise to the top.',
       registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdBRWoFIQqj1rEz5IncdP6uh2S7WcW9OrhUxDYibUhBEFhthg/viewform?usp=sharing',
       galleryImages: [
@@ -102,9 +102,9 @@ export interface EventContent {
     'hackathon': {
       title: 'Hackathon',
       description: '36-hour coding competition',
-      rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams of 2-4 members. Problem statements will be revealed at the start of the event. Teams must bring their own laptops.',
+      rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
       aboutUs: 'Code Flow: A thrilling 36-hour hackathon where innovators and developers collaborate, code, and create groundbreaking solutions under intense time pressure.',
-      registrationLink: 'https://unstop.com/o/EwsWvph?lb=kxB1XWrC&utm_medium=Share&utm_source=shortUrl',
+      registrationLink: 'https://unstop.com/o/EwsWvph?utm_medium=Share&utm_source=shortUrl',
       galleryImages: [
         '/hack1.jpg',
         '/tt2.jpg',
@@ -116,9 +116,9 @@ export interface EventContent {
     'mini-games': {
       title: 'Mini Games',
       description: 'Play, Compete and have a blast!',
-      rules: 'Registration for Mini Games will be on the spot. Participants can play any game of their choice. Winners will be awarded exciting prizes.',
+      rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
       aboutUs: 'Play, compete, and have a blast! Join our Mini Games Carnival, featuring exciting challenges like Darts, Air Hockey, Cup Stack, Mini Basketball, Flip Tic Tac Toe, Electric Touch, and Jenga. Test your skills, have fun, and claim victory!',
-      registrationLink: 'https://forms.google.com/hackathon',
+      registrationLink: 'The registration of this event is on the spot. Just come and have fun!',
       galleryImages: [
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/hack1.jpg',
         'https://de34i7k6qwgwc.cloudfront.net/uploads/img/hack2.jpg',
@@ -129,7 +129,7 @@ export interface EventContent {
     'sketchify': {
       title: 'Sketchify',
       description: 'Sketching and drawing contest',
-      rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Participants must bring their own stationery. \nTheme will be announced on the spot. Duration is 2 hours.',
+      rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
       aboutUs: 'Sketchify event at St. Thomas College has been a creative outlet for students  showcasing exceptional artistic talent and fostering a passion for sketching.',
       registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSf_5X41AR4TC12p3vJ8IhuXa1c3uu9TkDLxFrf2B3eYgXW7Dg/viewform?usp=sharing',
       galleryImages: [
@@ -141,7 +141,7 @@ export interface EventContent {
     'playtopia': {
       title: 'Playtopia',
       description: 'Interactive gaming competition',
-      rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Participants must register in teams of 2. Games will be announced on the day of the event.',
+      rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
       aboutUs: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Playtopia is our flagship gaming event where participants compete in a variety of video and board games.',
       registrationLink: 'https://forms.google.com/playtopia',
       galleryImages: [
@@ -153,7 +153,7 @@ export interface EventContent {
     'mystic-map': {
       title: 'Mystic Map',
       description: 'Treasure hunt with cryptic clues (For College Students Only)',
-      rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams of 3-5 members. Clues will be provided at different checkpoints. First team to reach the final destination wins.',
+      rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
       aboutUs: 'Decipher the clues, navigate the unknown, and uncover hidden secrets! Join Mystic Map, our ultimate treasure hunt, where only the sharpest minds and quickest explorers will claim victory.',
       registrationLink: 'https://forms.gle/F4Hzvzi51m9m4mS17',
       galleryImages: [
@@ -163,7 +163,7 @@ export interface EventContent {
     'quiz': {
       title: 'Quiz',
       description: 'General knowledge quiz competition',
-      rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams of 2 members. Multiple rounds including written, audio-visual, and rapid fire rounds.',
+      rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
       aboutUs: 'Think fast, answer smart, and claim the crown! Join our college quiz competition, where knowledge meets competition and only the sharpest minds prevail.',
       registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfk1oFYQsLo7JJus91Pk-rB8-O2hSrDbPY9QZJahuwT6puRmA/viewform?usp=sharing',
       galleryImages: [
@@ -175,7 +175,7 @@ export interface EventContent {
     'robotics': {
       title: 'Robotics',
       description: 'Robot building and programming challenge',
-      rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams will be provided with robotics kits. Tasks will be announced on the spot. Time limit is 4 hours.',
+      rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
       aboutUs: 'Gear up, innovate, and dominate the arena! Join RoboRush, our ultimate robotics showdown, where creativity meets competition and only the smartest bots survive.',
       registrationLink: 'https://forms.gle/k7Qo5AmQWfpjFj1V8',
       galleryImages: [
@@ -187,7 +187,7 @@ export interface EventContent {
     'bgmi': {
       title: 'BGMI',
       description: 'Battlegrounds Mobile India tournament',
-      rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams of 4 members. Multiple rounds including qualifiers and finals. Players must bring their own devices with BGMI installed.',
+      rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
       aboutUs: 'Experience the thrill of battle royale competition! Our BGMI tournament brings together the best squads from across campus to compete for glory in intense tactical gameplay.',
       registrationLink: 'https://forms.gle/odYLDC3gGGhsvyaY7',
       galleryImages: [
@@ -198,7 +198,7 @@ export interface EventContent {
     'valorant': {
     title: 'Valorant',
     description: 'Tactical 5v5 FPS competition',
-    rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams of 5 members. Double elimination tournament. Standard Valorant competitive rules apply. Matches will be best of 3.',
+    rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
     aboutUs: 'Aim, strategize, and dominate! Join our Valorant tournament where tactical precision meets lightning reflexes. Form your squad and prove your worth in this premier collegiate esports event.',
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScfcQhomw4nHuCG8NU_D4tY-RLRs-deWPQghNKEPBZuA4MLMw/viewform?usp=sharing',
     galleryImages: [
@@ -212,7 +212,7 @@ export interface EventContent {
   'pes': {
     title: 'PES',
     description: 'Pro Evolution Soccer tournament',
-    rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. 1v1 knockout format. Players can select any club or national team. Standard half length is 5 minutes. No custom teams allowed.',
+    rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
     aboutUs: 'Show your virtual football skills at our PES tournament! Experience the excitement of competitive gaming with realistic gameplay and tactical depth in this popular football simulation.',
     registrationLink: 'https://forms.gle/FdwYe5qUbKBHuFaCA',
     galleryImages: [
@@ -223,7 +223,7 @@ export interface EventContent {
     'codigo': {
       title: 'Codigo',
       description: 'Competitive programming contest',
-      rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Individual participation. Problems will range from easy to hard. Time limit is 3 hours.',
+      rules: 'https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view',
       aboutUs: 'Code, compile, and conquer! Join our college coding competition, where logic meets innovation and only the best programmers rise to the top.',
       registrationLink: 'https://forms.gle/WRuz6QJb7UM4AUdy8',
       galleryImages: [

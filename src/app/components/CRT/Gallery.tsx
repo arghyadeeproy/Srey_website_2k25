@@ -70,7 +70,7 @@ const Gallery: React.FC<GalleryProps> = ({ title, images, onClose }) => {
             <div className="text-white">No images available</div>
           )}
         </div>
-      </div>
+      </div>A
     </div>
   );
 };
