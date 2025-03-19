@@ -262,7 +262,12 @@ const CRTScreen = () => {
         } else if (item === 'gallery') {
           toggleWindow(`${baseEventId}-gallery`);
         } else if (item === 'registration') {
-          handleExternalLink(eventData.registrationLink);
+          // Special handling for Mini Games
+          if (baseEventId === 'mini-games') {
+            toggleWindow(`${baseEventId}-rules`);
+          } else {
+            handleExternalLink(eventData.registrationLink);
+          }
         }
       };
       

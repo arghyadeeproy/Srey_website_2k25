@@ -116,7 +116,7 @@ export interface EventContent {
     'mini-games': {
       title: 'Mini Games',
       description: 'Play, Compete and have a blast!',
-      rules: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams of 2-4 members. Problem statements will be revealed at the start of the event. Teams must bring their own laptops.',
+      rules: 'Registration for Mini Games will be on the spot. Participants can play any game of their choice. Winners will be awarded exciting prizes.',
       aboutUs: 'Play, compete, and have a blast! Join our Mini Games Carnival, featuring exciting challenges like Darts, Air Hockey, Cup Stack, Mini Basketball, Flip Tic Tac Toe, Electric Touch, and Jenga. Test your skills, have fun, and claim victory!',
       registrationLink: 'https://forms.google.com/hackathon',
       galleryImages: [
