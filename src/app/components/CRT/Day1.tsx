@@ -13,13 +13,13 @@ export const Day1Content = ({ onFolderClick }: { onFolderClick?: (folderId: stri
   const folders = [
     "Table Tennis",
     "Chess",
-    "Quiz",
     "Carrom",
     "Badminton",
     "Pixcellence",
     "Film Making",
     "Hackathon",
-    "Sketchify"
+    "Sketchify",
+    "Quiz"
   ];
 
   const handleFolderClick = (folderName: string) => {
