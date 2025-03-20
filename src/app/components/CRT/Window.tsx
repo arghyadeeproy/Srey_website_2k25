@@ -47,7 +47,7 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
     e.preventDefault();
     e.stopPropagation();
     // Open PDF in a new tab - replace with your actual PDF URL
-    window.open('https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view', '_blank');
+    window.open('https://drive.google.com/file/d/1fZfEiAMHtURbHTVyrOKzRuzs4tnQUJFl/view?usp=sharing', '_blank');
   };
 
   const toggleDropup = () => {
