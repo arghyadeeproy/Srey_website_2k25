@@ -63,7 +63,7 @@ export default function PosterPopup({ onClose }: PosterPopupProps) {
         <div className="flex justify-center p-4">
           <div className="w-full h-auto">
             <Image
-              src="/Srey_Poster.jpeg" 
+              src="/Srey_Poster.PNG" 
               alt="Pragyan 2023 Event Poster"
               width={800}
               height={1000}
