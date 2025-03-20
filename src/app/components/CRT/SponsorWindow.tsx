@@ -30,6 +30,19 @@ const SponsorWindow = ({ title, onClose, sponsors }: SponsorWindowProps) => {
     window.open(website, '_blank');
   };
 
+  // Navigation functions
+  const handleBack = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    onClose(e);
+  };
+
+  const handleHome = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    onClose(e);
+  };
+
   return (
     <div className="w-[300px] h-[200px] border border-white bg-gray-200 relative font-mono shadow-lg overflow-hidden flex flex-col">
       {/* Title Bar */}
@@ -43,11 +56,21 @@ const SponsorWindow = ({ title, onClose, sponsors }: SponsorWindowProps) => {
         </button>
       </div>
 
-      {/* Navigation Bar */}
-      <div className="flex items-center bg-gray-400 text-white text-xs handle cursor-move border-t border-b border-white">
-        <span className="border-r border-white px-1" onClick={onClose}>🔙</span>
-        <span className="border-r border-white px-1" onClick={onClose}>🏠︎</span>
-        <span className="px-2">C:\Sponsors\</span>
+      {/* Navigation Bar - Fixed the issue by separating draggable area from clickable buttons */}
+      <div className="flex items-center bg-gray-400 text-white text-xs border-t border-b border-white">
+        <button 
+          className="border-r border-white px-1 py-1 hover:bg-gray-500 focus:outline-none" 
+          onClick={handleBack}
+        >
+          🔙
+        </button>
+        <button 
+          className="border-r border-white px-1 py-1 hover:bg-gray-500 focus:outline-none" 
+          onClick={handleHome}
+        >
+          🏠︎
+        </button>
+        <span className="px-2 handle cursor-move flex-1">C:\Sponsors\</span>
       </div>
       
       {/* Sponsors Grid with scroll */}
