@@ -42,6 +42,14 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
     }
   };
 
+  // Function to handle PDF redirection
+  const handlePdfClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    // Open PDF in a new tab - replace with your actual PDF URL
+    window.open('https://drive.google.com/file/d/1yzT2Wva61jLdtRqd27sL2PjQWKv9gm1m/view', '_blank');
+  };
+
   const toggleDropup = () => {
     setShowDropup(!showDropup);
   };
@@ -282,28 +290,40 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
             <span className="border-r border-white px-1 cursor-pointer no-drag" onClick={(e) => handleNavigation('home', e)}>🏠︎</span>
             <span className="px-2">C:\Events\</span>
           </div>
-          <div className="bg-gray-300 p-2 text-xs flex-1 flex">
+          <div className="bg-gray-300 p-2 text-xs flex-1 flex flex-wrap">
             <div 
-              className="cursor-pointer mr-4" 
+              className="cursor-pointer mr-4 mb-2" 
               onClick={() => handleFolderClick("day1")}
             >
               <img
                 src="folder-d42ea2.png"
                 alt="Folder"
-                className="w-8 h-8 mr-2"
+                className="w-8 h-8 mx-auto mb-1"
               />
-              <span className="">Day 1</span>
+              <span className="text-center block">Day 1</span>
             </div>
             <div 
-              className="cursor-pointer" 
+              className="cursor-pointer mr-4 mb-2" 
               onClick={() => handleFolderClick("day2")}
             >
               <img
                 src="/folder-d42ea2.png"
                 alt="Folder"
-                className="w-8 h-8 mr-2"
+                className="w-8 h-8 mx-auto mb-1"
               />
-              <span className="">Day 2</span>
+              <span className="text-center block">Day 2</span>
+            </div>
+            {/* PDF Icon for Event Rules */}
+            <div 
+              className="cursor-pointer no-drag" 
+              onClick={handlePdfClick}
+            >
+              <img
+                src="/doc-a008ef.png"
+                alt="PDF"
+                className="w-8 h-8 mx-auto mb-1"
+              />
+              <span className="text-center block">Event Rules</span>
             </div>
           </div>
         </>

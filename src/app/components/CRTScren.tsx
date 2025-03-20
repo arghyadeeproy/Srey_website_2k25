@@ -101,6 +101,11 @@ const CRTScreen = () => {
     window.open(url, '_blank');
   };
 
+  // Open PDF in a new tab
+  const openPdf = () => {
+    window.open('/event-rules.pdf', '_blank');
+  };
+
   const toggleWindow = (id: string) => {
     // Play click sound
     if (clickAudioRef.current) {
