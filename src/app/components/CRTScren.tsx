@@ -28,6 +28,13 @@ const sponsorData = [
     image: '/p360.PNG', 
     tier: 'Platinum',
     website: 'https://www.p360.com/' 
+  },
+  {
+    id: 'sponsor2', 
+    name: 'KFC', 
+    image: '/kfc.png', 
+    tier: 'Food Stall Partner',
+    website: 'https://online.kfc.co.in/' 
   }
 ];
 
