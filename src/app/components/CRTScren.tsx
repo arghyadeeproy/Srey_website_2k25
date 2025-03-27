@@ -120,6 +120,13 @@ const CRTScreen = () => {
       clickAudioRef.current.play().catch((err: Error) => console.error("Audio play failed:", err));
     }
 
+    // Special handling for merchandise icon
+    if (id === 'merch') {
+      // Replace with your actual Google Form URL
+      window.open('https://forms.gle/aM5JFAqCydACuzKo7', '_blank');
+      return;
+    }
+
     setOpenWindows((prev) =>
       prev.includes(id) ? prev.filter((win) => win !== id) : [...prev, id]
     );
