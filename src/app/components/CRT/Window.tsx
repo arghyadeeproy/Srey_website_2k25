@@ -329,27 +329,45 @@ const Window = ({ title, onClose, onFolderClick }: WindowProps) => {
         </>
       ) : title === "aboutus" ? (
         <div className="p-4 text-xs text-gray-800 overflow-y-auto flex-1">
-          <h2 className="text-blue-900 font-bold text-sm">🚀 <span 
-            className="cursor-pointer hover:underline"
-            onClick={handleCollegeWebsite}
-          >St. Thomas' College of Engineering and Technology</span> proudly presents</h2>
-          <h3 className="text-red-600 font-bold text-sm">SREY 2K25 🎉</h3>
-          <p className="mt-2">
-            Kolkata's premier on-campus tech festival. 💡🔥
-          </p>
-          <p className="mt-1">
-            This immersive experience offers a dynamic platform for aspiring innovators and tech enthusiasts. 🛠️🤖
-          </p>
-          <p className="mt-1">
-            Engage in thought-provoking events, insightful interactions, and electrifying competitions designed to challenge and inspire. 🎯⚡
-          </p>
-          <p className="mt-1">
-            Network with knowledgeable minds, connect with fellow tech aficionados, and gain firsthand exposure to cutting-edge advancements. 🌐👨‍💻
-          </p>
-          <p className="mt-1 font-bold">
-            Join us and be wired, inspired, and empowered! 🔥✨
-          </p>
-        </div>
+  <h2 className="text-blue-900 font-bold text-sm">
+    🚀 <span 
+      className="cursor-pointer hover:underline"
+      onClick={handleCollegeWebsite}
+    >
+      St. Thomas' College of Engineering and Technology
+    </span> proudly presents
+  </h2>
+  <h3 className="text-red-600 font-bold text-sm">SREY 2K25 🎉</h3>
+  <p className="mt-2">
+    Kolkata's premier on-campus tech festival. 💡🔥
+  </p>
+  <p className="mt-1">
+    This immersive experience offers a dynamic platform for aspiring innovators and tech enthusiasts. 🛠️🤖
+  </p>
+  <p className="mt-1">
+    Engage in thought-provoking events, insightful interactions, and electrifying competitions designed to challenge and inspire. 🎯⚡
+  </p>
+  <p className="mt-1">
+    Network with knowledgeable minds, connect with fellow tech aficionados, and gain firsthand exposure to cutting-edge advancements. 🌐👨‍💻
+  </p>
+  <p className="mt-1 font-bold">
+    Join us and be wired, inspired, and empowered! 🔥✨
+  </p>
+  
+  {/* Disclaimer Section */}
+  <p className="mt-4 text-gray-600 text-xs">
+    The elements of this website are inspired by 
+    <a 
+      href="https://www.moviepalaceonline.com" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="text-blue-600 hover:underline"
+    >
+      Movie Palace Online
+    </a>. 
+    All the functionalities and backend integrations are independently developed.
+  </p>
+</div>
       ) : title === "contact" ? (
         <div className="flex flex-col flex-1">
           <div className="flex items-center bg-gray-900 text-green-500 text-xs border-t border-b border-white px-2 py-1">
