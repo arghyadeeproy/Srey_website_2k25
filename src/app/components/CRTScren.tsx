@@ -31,6 +31,13 @@ const sponsorData = [
   },
   {
     id: 'sponsor2', 
+    name: 'Paper Boat',
+    image: '/paperboat.png',
+    tier: 'Refreshment Partner',
+    website: 'https://www.hectorbeverages.com/zero' 
+  },
+  {
+    id: 'sponsor3', 
     name: 'KFC', 
     image: '/kfc.png', 
     tier: 'Food Stall Partner',
